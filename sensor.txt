@@ -1,0 +1,26 @@
+#Below there are 3 counters: sockets, lights and presence, paste only the block of code you are interested in into your sensor.yaml file:
+#label_entities('Prese') this is the piece of code that needs to be changed according to your labels
+
+#Contatore Prese
+- platform: template
+  sensors:
+    prese_accese: #you can also change the sensor we create
+      friendly_name: "Prese Accese" #you can also change the fliendly name
+      icon_template: mdi:power-plug-outline
+      value_template: "{{ states.switch | rejectattr('attributes.entity_id', 'defined')|selectattr('entity_id','in',label_entities('Prese'))| selectattr('state', 'eq', 'on') | list | count }}"
+
+#Contatore Luci
+- platform: template
+  sensors:
+    luci_accese:
+      friendly_name: "Luci Accese"
+      icon_template: mdi:lightbulb-group-outline
+      value_template: "{{ states.light | rejectattr('attributes.entity_id', 'defined')|selectattr('entity_id','in',label_entities('Luci'))| selectattr('state', 'eq', 'on') | list | count }}"
+
+#Contatore Presenze/movimento
+- platform: template
+  sensors:
+    presenze_accese:
+      friendly_name: "Presenze Accese"
+      icon_template: mdi:motion-sensor
+      value_template: "{{ states.binary_sensor | rejectattr('attributes.entity_id', 'defined')|selectattr('entity_id','in',label_entities('Presenza'))| selectattr('state', 'eq', 'on') | list | count }}"

@@ -1,0 +1,92 @@
+type: vertical-stack
+cards:
+  - type: custom:bubble-card
+    card_type: pop-up
+    hash: '#light'
+    button_type: slider
+    name: Info Luci
+    icon: mdi:lightbulb-group
+    close_on_click: false
+    background_update: false
+    close_by_clicking_outside: true
+    card_layout: normal
+    width_desktop: 540px
+    margin: 7px
+    margin_top_mobile: 0px
+    margin_top_desktop: 0px
+    bg_blur: '14'
+    hide_backdrop: false
+    show_header: true
+    scrolling_effect: true
+    show_icon: true
+    show_name: true
+  - type: custom:button-card
+    entity: light.bagno
+    name: Bagno
+    state:
+      - value: 'on'
+        label: Accesa
+        styles:
+          label:
+            - color: yellow
+      - value: 'off'
+        label: Spenta
+        styles:
+          label:
+            - color: green
+    show_label: true
+    show_icon: false
+    styles:
+      name:
+        - justify-self: start
+        - margin-left: 8px
+      label:
+        - justify-self: start
+        - margin-left: '-14px'
+      grid:
+        - grid-template-columns: 1fr 1fr
+        - grid-template-rows: min-content
+        - grid-template-areas: '"n l"'
+      card:
+        - border: none
+        - background: none
+        - padding: 0 0 0 0
+    visibility:
+      - condition: state
+        entity: light.bagno
+        state: 'on'
+  - type: custom:button-card
+    entity: light.cucina
+    name: Cucina
+    state:
+      - value: 'on'
+        label: Accesa
+        styles:
+          label:
+            - color: yellow
+      - value: 'off'
+        label: Spenta
+        styles:
+          label:
+            - color: green
+    show_label: true
+    show_icon: false
+    styles:
+      name:
+        - justify-self: start
+        - margin-left: 8px
+      label:
+        - justify-self: start
+        - margin-left: '-14px'
+      grid:
+        - grid-template-columns: 1fr 1fr
+        - grid-template-rows: min-content
+        - grid-template-areas: '"n l"'
+      card:
+        - border: none
+        - background: none
+        - padding: 0 0 0 0
+    visibility:
+      - condition: state
+        entity: light.cucina
+        state: 'on'
