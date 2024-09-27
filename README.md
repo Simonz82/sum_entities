@@ -11,7 +11,8 @@
 </ol>
 <p>ok! now we got that (see image below, Yellow square):</p>
 <p><img src="example/sum_entities.jpg" alt="Sum_entities" /></p>
-<p><img src="example/sum_entities.mp4" alt="sum_entities" /></p>
+<p><video controls="controls" width="300" height="150">
+<source src="example/sum_entities.mp4" type="video/mp4" /></video></p>
 <p>Now to be able to see which lights are on we have to do this:</p>
 <ol dir="auto">
 <li>a</li>
