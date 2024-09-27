@@ -11,8 +11,8 @@
 </ol>
 <p>ok! now we got that (see image below, Yellow square):</p>
 <p><img src="example/sum_entities.jpg" alt="Sum_entities" /></p>
-<p><video controls="controls" width="300" height="150">
-<source src="example/sum_entities.mp4" type="video/mp4" /></video></p>
+
+https://github.com/user-attachments/assets/6473f17b-c96e-439b-bec8-199157baa4f9
 <p>Now to be able to see which lights are on we have to do this:</p>
 <ol dir="auto">
 <li>a</li>
@@ -27,3 +27,10 @@
 [![PayPal](https://github.com/Simonz82/desktop-tutorial/blob/main/paypal.svg)](https://www.paypal.com/paypalme/simongmail)
 
 <p>Make your Amazon purchases from <a href="https://amzn.to/3XWWTgz" target="_blank">THIS LINK</a><br /><br />Join our Telegram channel dedicated to Home Assistant news:<br /><a title="Home Assistant News" href="https://t.me/Home_Assistant_News" target="_blank">Home Assistant News</a><br /><br />Join our Telegram channel dedicated to home automation products, there are lots of offers:<br /><a title="offerte_domotica" href="https://t.me/offerte_domotica_ita" target="_blank">Offerte_domotica</a></p>
+
+
+
+
+
+
+
