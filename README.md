@@ -16,12 +16,13 @@
 
 https://github.com/user-attachments/assets/732f33bd-28df-49fd-9899-c3f87ad6aefe
 
-
+second part in update ...
 <ol dir="auto">
 <li>a</li>
 <li>b</li>
 <li>c</li>
-</ol>
+
+
 ----------------------------------------
 <p>Would you like to give me a hand?<br />The content of this page is completely free of charge and the purpose is certainly not to make money.<br />If you would like to lend me a hand to help with expenses and lost time, you have the following ways:</p>
 
