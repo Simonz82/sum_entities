@@ -30,13 +30,15 @@ second part in update ...
 
 [![PayPal](https://github.com/Simonz82/desktop-tutorial/blob/main/paypal.svg)](https://www.paypal.com/paypalme/simongmail)
 
-<p>Make your Amazon purchases from this link:
-[![Amazon](https://github.com/Simonz82/desktop-tutorial/blob/main/amazon_logo.jpg)](https://amzn.to/3XWWTgz)
-<br />Join our Telegram channel dedicated to Home Assistant news:
+Make your Amazon purchases from this link:
+
+[![Amazon](https://github.com/Simonz82/desktop-tutorial/blob/main/Amazon_logo.jpg)](https://amzn.to/3XWWTgz)
+
+Join our Telegram channel dedicated to Home Assistant news:
 
 [![Home_Assistant_News](https://github.com/Simonz82/desktop-tutorial/blob/main/home_assistant_news.jpg)](https://t.me/Home_Assistant_News)
 
-<br />Join our Telegram channel dedicated to home automation products, there are lots of offers:
+Join our Telegram channel dedicated to home automation products, there are lots of offers:
 
 [![Offerte Domotica](https://github.com/Simonz82/desktop-tutorial/blob/main/offerte_domotica.jpg)](https://t.me/offerte_domotica_ita)
 
