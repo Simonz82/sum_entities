@@ -12,9 +12,11 @@
 <p>ok! now we got that (see image below, Yellow square):</p>
 <p><img src="example/sum_entities.jpg" alt="Sum_entities" /></p>
 
+<p>Now to be able to see which lights are on we have to do this:</p>
+
 https://github.com/user-attachments/assets/732f33bd-28df-49fd-9899-c3f87ad6aefe
 
-<p>Now to be able to see which lights are on we have to do this:</p>
+
 <ol dir="auto">
 <li>a</li>
 <li>b</li>
