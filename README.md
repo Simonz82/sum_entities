@@ -11,7 +11,7 @@
 <li>If we look at the operations the template performs, we can understand this:<br />
 "states.light" = retrieves the states of entities in the light domain.<br />
 "selectattr(‘state’, ‘eq’, ‘on’)" = filters entities where state equals on.<br />
-"selectattr(‘entity_id’,‘in’,label_entities(‘Light’))" = filters entities with label Luci.<br />
+"selectattr(‘entity_id’,‘in’,label_entities(‘Luci’))" = filters entities with label light.<br />
 "list | count" = constructs a list and counts the elements. (only list would give the written list)<br />
 With the code written in the sensor.yaml file we will have an entity called lights_on where the count of all light entities in the on state (like the image above in the yellow rectangle) will be reported in the state.<br />
 This approach has the considerable advantage of being completely dynamic: each new entity entering the light domain and labelled lights will be taken into account without doing anything.</li>
