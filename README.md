@@ -1,33 +1,41 @@
-<div class="markdown-heading" dir="auto">
-<h2 class="heading-element" dir="auto" tabindex="-1"><span class="x19la9d6 x1fc57z9 x6ikm8r x10wlt62 x19co3pv x1g5zs5t xfibh0p xiy17q3 x1xsqp64 x1lkfr7t xexx8yu x4uap5 x18d9i69 xkhd6sd"><span class="xrtxmta x1bhl96m">➕ </span></span>Sum of Entities for home assistant</h2>
-<a id="user-content--samsung-remote-control-for-home-assistant" class="anchor" href="https://github.com/Simonz82/ha_tv_samsung#-samsung-remote-control-for-home-assistant" aria-label="Permalink: 📺 Samsung Remote Control for home assistant"></a></div>
-<p dir="auto">I wanted to share a board I created, thanks to various expert guides found online, to manage my Samsung Q70 55&rsquo; TV</p>
-<p dir="auto">Instructions:</p>
-<ol dir="auto">
-<li>in HA create the label: Luci, prese, presenza ecc. (mine have these names in Italian) if you change them, in the sensor file where you then adapt them</li>
-<li>from Hacs, install:<br />a. bubble-card</li>
-<li>in the HA file sensor.yaml, insert the contents of sensor.txt (READ the first line), if you do not have the file:<br />a. you must create sensor.yaml in the config/ folder<br />b. open the file configuration.yaml and insert this line: sensor: !include sensor.yaml</li>
-<li>create a new badge in HA (see image below, green square) and select entities: sensor.luci_accese (to sum up the lights on) or prese_accese (to sum up the switch on) or presences</li>
-<li>If we look at the operations the template performs, we can understand this:<br />
-"states.light" = retrieves the states of entities in the light domain.<br />
-"selectattr(‘state’, ‘eq’, ‘on’)" = filters entities where state equals on.<br />
-"selectattr(‘entity_id’,‘in’,label_entities(‘Luci’))" = filters entities with label light.<br />
-"list | count" = constructs a list and counts the elements. (only list would give the written list)<br />
-With the code written in the sensor.yaml file we will have an entity called lights_on where the count of all light entities in the on state (like the image above in the yellow rectangle) will be reported in the state.<br />
-This approach has the considerable advantage of being completely dynamic: each new entity entering the light domain and labelled lights will be taken into account without doing anything.</li>
-</ol>
-<p>ok! now we got that (see image below, Yellow square):</p>
-<p><img src="example/sum_entities.jpg" alt="Sum_entities" /></p>
+<h2><span style="text-decoration: underline;"><strong>➕ Somma di entità per l'assistente domestico</strong></span></h2>
 
-<p>Now to be able to see which lights are on we have to do this:</p>
+Volevo condividere una scheda che ho creato, grazie a varie guide di esperti trovate online, per gestire il mio TV Samsung Q70 55”.
+
+Istruzioni:
+
+da Hacs, installare:
+
+1. bubble-card
+
+poi...
+1. in HA creare l'etichetta: Luci, prese, presenza ecc. (i miei hanno questi nomi in italiano) se li cambiate, nel file sensor dovrete poi cambiarli.
+2. nel file HA sensor.yaml, inserire il contenuto di sensor.txt, se non si dispone del file sensor.yaml è necessario creare sensor.yaml nella cartella config/, aprire il file configuration.yaml e inserire questa riga: sensor: !include sensor.yaml
+3. creare un nuovo badge in HA (vedi immagine sotto: quadrato verde) e selezionare le entità: sensor.luci_accese (per sommare le luci accese) o prese_accese (per sommare l'accensione) o presenze o altro.
+
+Se osserviamo il codice, possiamo capirlo meglio:
+1. “stati.luce” = recupera gli stati delle entità nel dominio luce.
+2. “selectattr('state', 'eq', 'on')” = filtra le entità in cui lo stato è uguale a on.
+3. “selectattr('entity_id','in',label_entities('Luci'))” = filtra le entità con l'etichetta luce.
+4. “list | count” = costruisce un elenco e conta gli elementi. (solo list darebbe l'elenco scritto di tutti gli elementi)
+
+Con il codice scritto nel file sensor.yaml avremo un'entità chiamata lights_on in cui il conteggio di tutte le entità luminose nello stato on (come nell'immagine sotto nel rettangolo giallo) sarà riportato nello stato.
+Questo approccio ha il notevole vantaggio di essere completamente dinamico: ogni nuova entità che entra nel dominio della luce e che viene etichettata come luce verrà presa in considerazione senza fare nulla.
+
+Ok, ora che abbiamo capito (vedi immagine sotto, quadrato giallo):
+
+<p><img src="example/sum_entities.jpg" alt="" /></p>
+
+Ora per poter vedere quali luci sono accese dobbiamo fare così:
 
 https://github.com/user-attachments/assets/732f33bd-28df-49fd-9899-c3f87ad6aefe
 
-second part in update ...
-<ol dir="auto">
-<li>a</li>
-<li>b</li>
-<li>c</li>
+Seconda parte per popup in aggiornamento:
+1.
+2.
+3.
+
+<p>Enjoy!</p>
 
 
 ----------------------------------------
