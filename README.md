@@ -1,4 +1,4 @@
-<h2><span style="text-decoration: underline;"><strong>➕ Somma di entità per l'assistente domestico</strong></span></h2>
+<h2><span style="text-decoration: underline;"><strong>➕ Somma di entità in Home Assistant</strong></span></h2>
 
 Volevo condividere una scheda che ho creato, grazie a varie guide di esperti trovate online, per gestire il mio TV Samsung Q70 55”.
 
@@ -7,6 +7,8 @@ Istruzioni:
 da Hacs, installare:
 
 1. bubble-card
+2. vertical-stack
+3. button-card
 
 poi...
 1. in HA creare l'etichetta: Luci, prese, presenza ecc. (i miei hanno questi nomi in italiano) se li cambiate, nel file sensor dovrete poi cambiarli.
@@ -30,10 +32,14 @@ Ora per poter vedere quali luci sono accese dobbiamo fare così:
 
 https://github.com/user-attachments/assets/732f33bd-28df-49fd-9899-c3f87ad6aefe
 
-Seconda parte per popup in aggiornamento:
-1.
-2.
-3.
+Seconda parte per avere un popup che mostra quali delle nostre entità sono accese:
+
+1. creare una nuova card in fondo alla vista (nella stessa vista dove abbiamo i badge), incolliamo il codice del file popup_card.txt e andiamo a modificare le entità in base alle vostre, nel mio codice ne ho inserite 2 come esempio, il codice della prima entità va dalla riga 23 alla riga 57, in questa sezione andate a sostituire light.bagno con la vostra entità luce, in ogni blocco l'entità è ripetuta 2 volte (es. riga 24 e 56) e così via per le altre entità
+2. se avete più luci da sommare copiate il blocco da 23 a 57 in coda e modificate le entità
+
+Risultato finale:
+
+<p><img src="example/popup.gif" alt="" /></p>
 
 <p>Enjoy!</p>
 
