@@ -1,6 +1,6 @@
 <h2><span style="text-decoration: underline;"><strong>➕ Somma di entità in Home Assistant</strong></span></h2>
 
-Volevo condividere una scheda che ho creato, grazie a varie guide di esperti trovate online, per gestire il mio TV Samsung Q70 55”.
+Volevo condividere una scheda che ho creato, grazie a varie guide di esperti trovate online, per gestire la somma delle mie luci accese o di presenze per casa ecc.
 
 Istruzioni:
 
